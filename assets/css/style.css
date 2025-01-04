@@ -1,0 +1,136 @@
+@import "landing.css";
+@import "dressShop.css";
+@import "dashboard.css";
+@import "review.css";
+
+:root {
+  --whiteColor: #fbf8f7;
+  --ivoryWhite: #fffff0;
+  --champagneColor: #e4d6b9;
+  --goldenColor: #dab88b;
+  --oliveColor: #b3d5e6;
+  --darkoliveColor: #7fa5b5;
+  --dustyRose: #d39fa4;
+  --darkdustyRose: #ba797f;
+  /* --dustyRose: #f4d5d6;
+  --darkdustyRose: #b07b7c; */
+  /*
+  --oliveColor: #83ac9b;
+  --darkoliveColor: #6a9b86; */
+
+  --textColor: #333333;
+
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-600: #4b5563;
+  --gray-800: #1f2937;
+  --gray-700: #374151;
+  --gray-900: #111827;
+  --redColor: #af4343;
+
+  --main-transition: 0.3s;
+}
+a {
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--whiteColor);
+  overflow-x: hidden;
+}
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+button {
+  cursor: pointer;
+}
+section {
+  margin: 40px 0px;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 800px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Main Heading */
+.main-heading {
+  text-align: center;
+}
+.main-heading h2 {
+  font-weight: normal;
+  font-size: 40px;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  color: var(--darkdustyRose);
+}
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  background-color: var(--darkdustyRose);
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: var(--whiteColor);
+  border-radius: 50%;
+  border: var(--darkdustyRose) 2px solid;
+  bottom: -37px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.fa-brands {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.home-btn {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: var(--darkdustyRose);
+  padding: 30px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}

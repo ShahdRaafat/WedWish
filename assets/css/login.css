@@ -1,0 +1,104 @@
+body {
+  background-color: var(--whiteColor);
+  font-family: "Lato", sans-serif;
+}
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+.home-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: var(--darkdustyRose);
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.login-box {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  min-height: 400px;
+  padding: 32px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  background-image: url("../images/coupleBG-removebg.png");
+  background-size: cover;
+  background-color: #fff;
+}
+
+.heading {
+  text-align: center;
+  color: var(--darkdustyRose);
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+/* Button Component */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition: all var(--main-transition);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: var(--dustyRose);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background-color: var(--darkdustyRose);
+}
+
+/* Form Components */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--textColor);
+  margin-bottom: 4px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid var(--gray-300);
+  border-radius: 6px;
+  transition: all var(--main-transition);
+  background-color: rgb(255, 255, 255, 0.5);
+  color: var(--textColor);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--dustyRose);
+  box-shadow: 0 0 0 2px rgb(210, 153, 194, 0.1);
+}
+
+.form-error {
+  color: var(--redColor);
+  font-size: 14px;
+  margin-top: 4px;
+}
